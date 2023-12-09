@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS动画示例</title>
+    
+    <style>
+        /* 设置旋转动画 */
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        /* 设置div元素样式 */
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation: spin 2s linear infinite;
+        }
+        
+        /* 设置页面标题样式 */
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 36px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS动画示例</h1>
+    
+    <div id="box"></div>
+</body>
+</html>
